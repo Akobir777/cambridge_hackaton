@@ -55,29 +55,36 @@
                   </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
-                  <tr class="bg-white">
+                  <tr
+                    class="bg-white"
+                    v-for="(product, index) in this.products.slice().reverse()"
+                    v-bind:key="index"
+                  >
                     <td
                       class="max-w-0 w-full px-6 py-4 whitespace-nowrap text-sm text-gray-900"
                     >
-                      Shakar
+                      {{ product.name }}
                     </td>
-                    <td class="text-left">4de342e3reYT</td>
+                    <td class="text-left">{{ product.id }}</td>
                     <td
                       class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                     >
-                      <span class="text-gray-900 font-medium">20 </span>
-                      qop
+                      {{ product.measure }}
                     </td>
                     <td
                       class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                     >
-                      <span class="text-gray-900 font-medium">20 </span>
+                      <span class="text-gray-900 font-medium"
+                        >{{ product.deadline }}
+                      </span>
                       kun
                     </td>
                     <td
                       class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                     >
-                      <span class="text-gray-900 font-medium">20,000 </span>
+                      <span class="text-gray-900 font-medium"
+                        >{{ product.price }}
+                      </span>
                       SO'M
                     </td>
                     <td
@@ -92,127 +99,7 @@
                     <td
                       class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                     >
-                      <time datetime="2020-07-11">July 11, 2020</time>
-                    </td>
-                  </tr>
-                  <tr class="bg-white">
-                    <td
-                      class="max-w-0 w-full px-6 py-4 whitespace-nowrap text-sm text-gray-900"
-                    >
-                      Shakar
-                    </td>
-                    <td class="text-left">4de342e3reYT</td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20 </span>
-                      qop
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20 </span>
-                      kun
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20,000 </span>
-                      SO'M
-                    </td>
-                    <td
-                      class="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block"
-                    >
-                      <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 capitalize"
-                      >
-                        saqlanyapti
-                      </span>
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <time datetime="2020-07-11">July 11, 2020</time>
-                    </td>
-                  </tr>
-                  <tr class="bg-white">
-                    <td
-                      class="max-w-0 w-full px-6 py-4 whitespace-nowrap text-sm text-gray-900"
-                    >
-                      Shakar
-                    </td>
-                    <td class="text-left">4de342e3reYT</td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20 </span>
-                      qop
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20 </span>
-                      kun
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20,000 </span>
-                      SO'M
-                    </td>
-                    <td
-                      class="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block"
-                    >
-                      <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 capitalize"
-                      >
-                        saqlanyapti
-                      </span>
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <time datetime="2020-07-11">July 11, 2020</time>
-                    </td>
-                  </tr>
-                  <tr class="bg-white">
-                    <td
-                      class="max-w-0 w-full px-6 py-4 whitespace-nowrap text-sm text-gray-900"
-                    >
-                      Shakar
-                    </td>
-                    <td class="text-left">4de342e3reYT</td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20 </span>
-                      qop
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20 </span>
-                      kun
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <span class="text-gray-900 font-medium">20,000 </span>
-                      SO'M
-                    </td>
-                    <td
-                      class="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block"
-                    >
-                      <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 capitalize"
-                      >
-                        saqlanyapti
-                      </span>
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      <time datetime="2020-07-11">July 11, 2020</time>
+                      <time datetime="2020-07-11">{{ product.date }}</time>
                     </td>
                   </tr>
 
@@ -231,5 +118,29 @@
 <script>
 export default {
   name: "IndexPage",
+  data() {
+    return {
+      products: [
+        {
+          id: 1568587,
+          name: "Go'sht",
+          price: 50000,
+          measure: "10 kg",
+          deadline: 2,
+          status: "pending",
+          date: "2020-05-03",
+        },
+        {
+          id: 1568588,
+          name: "Pomidor",
+          price: 50000,
+          measure: "2 tonna",
+          deadline: 2,
+          status: "pending",
+          date: "2020-05-01",
+        },
+      ],
+    };
+  },
 };
 </script>

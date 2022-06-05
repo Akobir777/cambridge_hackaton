@@ -123,22 +123,14 @@ export default {
       products: [
         {
           id: 1568585,
-          name: "Shakar",
+          name: "Muzqaymoq",
           price: 50000,
-          measure: "2 qop",
-          deadline: 2,
+          measure: "100",
+          deadline: 20,
           status: "pending",
-          date: "2020-05-01",
+          date: "2020-05-09",
         },
-        {
-          id: 1568586,
-          name: "Un",
-          price: 50000,
-          measure: "5 qop",
-          deadline: 2,
-          status: "pending",
-          date: "2020-05-02",
-        },
+
         {
           id: 1568587,
           name: "Go'sht",
