@@ -521,8 +521,8 @@
                   />
                   <span
                     class="hidden ml-3 text-gray-700 text-sm font-medium lg:block"
-                    ><span class="sr-only">Open user menu for </span>Emilia
-                    Birch</span
+                    ><span class="sr-only">Open user menu for </span>Shakhzod
+                    Uralov</span
                   >
                   <!-- Heroicon name: solid/chevron-down -->
                   <svg
