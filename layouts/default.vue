@@ -100,155 +100,6 @@
             alt="Easywire logo"
           />
         </div>
-        <nav
-          class="mt-5 flex-shrink-0 h-full divide-y divide-cyan-800 overflow-y-auto"
-          aria-label="Sidebar"
-        >
-          <div class="px-2 space-y-1">
-            <!-- Current: "bg-cyan-800 text-white", Default: "text-cyan-100 hover:text-white hover:bg-cyan-600" -->
-            <a
-              href="#"
-              class="bg-cyan-800 text-white group flex items-center px-2 py-2 text-base font-medium rounded-md"
-              aria-current="page"
-            >
-              <!-- Heroicon name: outline/home -->
-              <svg
-                class="mr-4 flex-shrink-0 h-6 w-6 text-cyan-200"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                />
-              </svg>
-              Bosh Sahifa
-            </a>
-
-            <a
-              href="#"
-              class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-base font-medium rounded-md"
-            >
-              <!-- Heroicon name: outline/clock -->
-              <svg
-                class="mr-4 flex-shrink-0 h-6 w-6 text-cyan-200"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              Kirimlar
-            </a>
-
-            <a
-              href="#"
-              class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-base font-medium rounded-md"
-            >
-              <!-- Heroicon name: outline/scale -->
-              <svg
-                class="mr-4 flex-shrink-0 h-6 w-6 text-cyan-200"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
-                />
-              </svg>
-              Chiqimlar
-            </a>
-
-            <a
-              href="#"
-              class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-base font-medium rounded-md"
-            >
-              <!-- Heroicon name: outline/credit-card -->
-              <svg
-                class="mr-4 flex-shrink-0 h-6 w-6 text-cyan-200"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                />
-              </svg>
-              Omborxona
-            </a>
-
-            <a
-              href="#"
-              class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-base font-medium rounded-md"
-            >
-              <!-- Heroicon name: outline/user-group -->
-              <svg
-                class="mr-4 flex-shrink-0 h-6 w-6 text-cyan-200"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-              Mijozlar
-            </a>
-          </div>
-          <div class="mt-6 pt-6">
-            <div class="px-2 space-y-1">
-              <a
-                href="#"
-                class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-cyan-100 hover:text-white hover:bg-cyan-600"
-              >
-                <!-- Heroicon name: outline/question-mark-circle -->
-                <svg
-                  class="mr-4 h-6 w-6 text-cyan-200"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                O'lchovlar
-              </a>
-            </div>
-          </div>
-        </nav>
       </div>
 
       <div class="flex-shrink-0 w-14" aria-hidden="true">
@@ -310,14 +161,14 @@
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   />
                 </svg>
-                Bosh Sahifa
+                Buyurtma Berish
               </NuxtLink>
 
               <NuxtLink
-                to="/incoming"
+                to="/unverified"
                 class="group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                 v-bind:class="`${
-                  $nuxt.$route.name == 'incoming'
+                  $nuxt.$route.name == 'unverified'
                     ? 'bg-cyan-800 text-white'
                     : 'text-cyan-100 hover:text-white hover:bg-cyan-600'
                 }`"
@@ -338,14 +189,14 @@
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                Kirimlar
+                Kutishdagilar
               </NuxtLink>
 
               <NuxtLink
-                to="outcoming"
+                to="/verified"
                 class="group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                 v-bind:class="`${
-                  $nuxt.$route.name == 'outcoming'
+                  $nuxt.$route.name == 'verified'
                     ? 'bg-cyan-800 text-white'
                     : 'text-cyan-100 hover:text-white hover:bg-cyan-600'
                 }`"
@@ -366,7 +217,7 @@
                     d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
                   />
                 </svg>
-                Chiqimlar
+                Tasdiqlanganlar
               </NuxtLink>
 
               <NuxtLink
@@ -394,14 +245,14 @@
                     d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
                   />
                 </svg>
-                Omborxona
+                Omborxonadagilar
               </NuxtLink>
 
               <NuxtLink
-                to="/customers"
+                to="/onroute"
                 class="group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                 v-bind:class="`${
-                  $nuxt.$route.name == 'customers'
+                  $nuxt.$route.name == 'onroute'
                     ? 'bg-cyan-800 text-white'
                     : 'text-cyan-100 hover:text-white hover:bg-cyan-600'
                 }`"
@@ -422,7 +273,7 @@
                     d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                Mijozlar
+                Qaytayotganlar
               </NuxtLink>
             </div>
             <div class="mt-6 pt-6">
@@ -458,7 +309,7 @@
                       d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  O'lchovlar
+                  Tugatilganlar
                 </NuxtLink>
               </div>
             </div>

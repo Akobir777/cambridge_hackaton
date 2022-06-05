@@ -4,7 +4,7 @@
       <h2
         class="max-w-6xl mx-auto mt-8 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8"
       >
-        Omborda Saqlangan Buyurtmalar
+        Tasdiqlangan Buyurtmalar
       </h2>
 
       <!-- Activity table (small breakpoint and up) -->
@@ -84,9 +84,9 @@
                       class="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block"
                     >
                       <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 capitalize"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"
                       >
-                        saqlanyapti
+                        tasdiqlandi
                       </span>
                     </td>
                     <td
@@ -124,9 +124,9 @@
                       class="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block"
                     >
                       <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 capitalize"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"
                       >
-                        saqlanyapti
+                        tasdiqlandi
                       </span>
                     </td>
                     <td
@@ -164,9 +164,9 @@
                       class="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block"
                     >
                       <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 capitalize"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"
                       >
-                        saqlanyapti
+                        tasdiqlandi
                       </span>
                     </td>
                     <td
@@ -204,9 +204,9 @@
                       class="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block"
                     >
                       <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 capitalize"
+                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 capitalize"
                       >
-                        saqlanyapti
+                        tasdiqlandi
                       </span>
                     </td>
                     <td
