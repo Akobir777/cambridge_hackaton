@@ -122,7 +122,7 @@ export default {
     return {
       products: [
         {
-          id: 1568587,
+          id: 1567587,
           name: "Go'sht",
           price: 50000,
           measure: "10 kg",
@@ -131,7 +131,7 @@ export default {
           date: "2020-05-03",
         },
         {
-          id: 1568588,
+          id: 1567588,
           name: "Pomidor",
           price: 50000,
           measure: "2 tonna",
