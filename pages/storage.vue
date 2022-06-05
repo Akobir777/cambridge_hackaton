@@ -132,7 +132,7 @@ export default {
         },
         {
           id: 1567588,
-          name: "Pomidor",
+          name: "Qulupnay",
           price: 50000,
           measure: "2 tonna",
           deadline: 2,
