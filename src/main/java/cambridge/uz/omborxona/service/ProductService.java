@@ -37,11 +37,11 @@ public class ProductService {
             return new ApiResponse("Bunday kategoriya mavjud emas", false);
         }
         Optional<Attachment> optionalAttachment = attachmentRepository.findById(productDto.getPhotoId());
-        if (!optionalCategory.isPresent()){
+        if (optionalCategory.isEmpty()){
             return new ApiResponse("Bunday rasm mavjud emas",false);
         }
         Optional<Measurement> optionalMeasurement = measurementRepository.findById(productDto.getMeasurementId());
-        if (!optionalCategory.isPresent()){
+        if (optionalCategory.isEmpty()){
             return new ApiResponse("Bunday ulchov birligi mavjud emas",false);
         }
         Product product = new Product();
@@ -67,10 +67,10 @@ public class ProductService {
         return new ApiResponse("mana", true, products);
     }
 
-    public ApiResponse edit(Integer id, ProductDto dto) {
+    public ApiResponse edit(Integer id, ProductDto productDto) {
         boolean existsByNameAndCategoryId = productRepository.existsByNameAndCategoryId(productDto.getName(), productDto.getCategoryId());
-        if (existsByNameAndCategoryId) {
-            return new ApiResponse("Bunday maxsulot ushbu kategoriyada mavjud", false);
+        if (!existsByNameAndCategoryId) {
+            return new ApiResponse("Bunday maxsulot ushbu kategoriyada mavjud emas", false);
         }
         Optional<Category> optionalCategory = categoryRepository.findById(productDto.getCategoryId());
         if (optionalCategory.isEmpty()) {
@@ -92,6 +92,16 @@ public class ProductService {
         product.setPhoto(optionalAttachment.get());
         product.setMeasurement(optionalMeasurement.get());
         Product save = productRepository.save(product);
-        return new ApiResponse("Maxsulot saqlandi",true,save);
+        return new ApiResponse("Edited",true,save);
+    }
+
+    public ApiResponse delete(Integer id) {
+        Optional<Product> optionalProduct = productRepository.findById(id);
+        if (optionalProduct.isEmpty()) {
+            return new ApiResponse("nout found",false);
+        }
+        Product product = optionalProduct.get();
+        product.setActive(false);
+        return new ApiResponse("o'chdi",true);
     }
 }
