@@ -26,6 +26,140 @@
 -->
   <div class="relative h-screen flex overflow-hidden bg-gray-100">
     <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div
+      v-show="$store.state.showModal"
+      class="fixed z-10 inset-0 overflow-y-auto"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+      >
+        <!--
+      Background overlay, show/hide based on modal state.
+
+      Entering: "ease-out duration-300"
+        From: "opacity-0"
+        To: "opacity-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100"
+        To: "opacity-0"
+    -->
+        <div
+          class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+        ></div>
+
+        <!-- This element is to trick the browser into centering the modal contents. -->
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+          >&#8203;</span
+        >
+
+        <!--
+      Modal panel, show/hide based on modal state.
+
+      Entering: "ease-out duration-300"
+        From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        To: "opacity-100 translate-y-0 sm:scale-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100 translate-y-0 sm:scale-100"
+        To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+    -->
+        <div
+          class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"
+        >
+          <div>
+            <div class="mt-3 text-center sm:mt-5">
+              <h3
+                class="text-lg leading-6 font-medium text-gray-900"
+                id="modal-title"
+              >
+                Add Product
+              </h3>
+              <div class="mt-2">
+                <div class="mb-6">
+                  <label
+                    for="base-input"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left"
+                    >Id</label
+                  >
+                  <input
+                    type="text"
+                    id="base-input"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    v-model="product.id"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="base-input"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left"
+                    >Mahsulot nomi</label
+                  >
+                  <input
+                    type="text"
+                    id="base-input"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    v-model="product.name"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="base-input"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left"
+                    >Miqdori</label
+                  >
+                  <input
+                    type="text"
+                    id="base-input"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    v-model="product.measure"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="base-input"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left"
+                    >Muddati(kun)</label
+                  >
+                  <input
+                    type="text"
+                    id="base-input"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    v-model="product.deadline"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="base-input"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-left"
+                    >Narxi : 10000 so'm</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 sm:mt-6 flex justify-center">
+            <button
+              type="button"
+              class="mx-1 inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+              @click="addProduct"
+            >
+              Buyurtma qoldirish
+            </button>
+            <button
+              type="button"
+              class="mx-1 inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+              @click="$store.commit('hideModal')"
+            >
+              Ortga
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div
       class="fixed inset-0 flex z-40 lg:hidden"
       role="dialog"
@@ -279,10 +413,10 @@
             <div class="mt-6 pt-6">
               <div class="px-2 space-y-1">
                 <NuxtLink
-                  to="/measurements"
+                  to="/history"
                   class="group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                   v-bind:class="`${
-                    $nuxt.$route.name == 'measurements'
+                    $nuxt.$route.name == 'history'
                       ? 'bg-cyan-800 text-white'
                       : 'text-cyan-100 hover:text-white hover:bg-cyan-600'
                   }`"
@@ -320,7 +454,7 @@
 
     <div class="flex-1 overflow-auto focus:outline-none">
       <div
-        class="relative z-10 flex-shrink-0 flex h-16 bg-white border-b border-gray-200 lg:border-none"
+        class="relative flex-shrink-0 flex h-16 bg-white border-b border-gray-200 lg:border-none"
       >
         <button
           class="px-4 border-r border-gray-200 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 lg:hidden"
@@ -419,5 +553,42 @@
 </template>
 
 <script>
-export default {};
+import { mapMutations } from "vuex";
+export default {
+  data: function () {
+    return {
+      product: {
+        id: 1568589,
+        name: "",
+        price: 100000,
+        measure: null,
+        deadline: null,
+      },
+    };
+  },
+  methods: {
+    addProduct() {
+      var today = new Date();
+      var date =
+        today.getFullYear() +
+        "-" +
+        (today.getMonth() + 1) +
+        "-" +
+        today.getDate();
+      let product = this.product;
+      product.date = date;
+      this.$store.commit("addProduct", this.product);
+      this.$store.commit("hideModal");
+      this.$router.push("/unverified");
+      // this.clearInputs();
+    },
+    clearInputs() {
+      this.product.id = this.product.id + 1;
+      this.product.name = "";
+      this.product.price = Math.floor(Math.random() * 1) + 1;
+      this.product.measure = "";
+      this.product.deadline = "";
+    },
+  },
+};
 </script>
